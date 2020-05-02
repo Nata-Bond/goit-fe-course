@@ -1,0 +1,115 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 30px;
+}
+
+.wrapper {
+  width: 901px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: "Playfair Display", serif;
+  font-size: 14px;
+  line-height: 24px;
+  color: #626262;
+}
+
+/* header */
+
+.nav-menu {
+  list-style: none;
+  padding-top: 76px;
+  padding-bottom: 104px;
+  text-align: center;
+}
+.nav-menu li {
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: #626262;
+}
+
+.nav-menu a:hover {
+  color: #44b6f5;
+}
+
+.nav-menu-item1 {
+  margin-right: 124px;
+}
+
+.nav-menu-item2 {
+  margin-right: 104px;
+}
+
+.nav-menu-item3 {
+  margin-right: 95px;
+}
+
+.nav-menu-item4 {
+  margin-right: 0px;
+}
+
+/* main */
+
+.articles {
+  list-style: none;
+}
+
+.articles-box {
+  display: inline-block;
+  width: 420px;
+}
+
+.articles-box:not(:nth-of-type(2n)) {
+  margin-right: 56px;
+}
+
+.articles-box:not(:nth-last-child(-n + 2)) {
+  margin-bottom: 130px;
+}
+
+.title {
+  color: #b4ad9e;
+  line-height: 17px;
+  text-transform: uppercase;
+  margin-bottom: 26px;
+}
+
+h2 {
+  font-size: 30px;
+  line-height: 36px;
+  margin-bottom: 33px;
+}
+
+button {
+  display: inline-block;
+  margin: 52px 380px 70px 358px;
+  padding: 20px 32px 20px 32px;
+  border: 1px solid #626262;
+  background-color: #ffffff;
+  font-family: "Playfair Display", serif;
+  font-size: 20px;
+  line-height: 24px;
+  color: #626262;
+}
