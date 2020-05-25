@@ -161,12 +161,10 @@ a.menu-item-a {
   height: 105px;
   font-size: 80px;
   font-weight: normal;
-  color: rgb(255, 255, 255);
   line-height: 11px;
-  z-index: 1;
-  background: transparent;
-  background-position: center;
+  color: rgb(255, 255, 255);
   background-color: rgba(83, 160, 142, 0.5);
+  background-position: center;
 }
 
 .slider-left:hover {
@@ -184,12 +182,10 @@ a.menu-item-a {
   height: 105px;
   font-size: 80px;
   font-weight: normal;
-  color: rgb(255, 255, 255);
   line-height: 11px;
-  z-index: 1;
-  background: transparent;
-  background-position: center;
+  color: rgb(255, 255, 255);
   background-color: rgba(83, 160, 142, 0.5);
+  background-position: center;
 }
 
 .slider-right:hover {
