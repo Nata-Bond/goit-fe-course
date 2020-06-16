@@ -18,10 +18,6 @@ img {
   max-width: 100%;
   height: auto;
 }
-.wrapper {
-  width: 100%;
-  margin: 0 auto;
-}
 
 header {
   background-image: url(../img/bg-img.png);
@@ -32,10 +28,6 @@ header {
 }
 
 .menu {
-  display: flex;
-}
-
-.menu-buttons {
   display: flex;
 }
 
@@ -51,6 +43,8 @@ header {
 
 .menu-buttons {
   list-style: none;
+  display: flex;
+  justify-content: center;
 }
 
 .menu-button-items button {
@@ -188,4 +182,67 @@ h3 {
   cursor: pointer;
   border: 2px solid rgb(255, 78, 80);
   border-radius: 20px;
+}
+
+@media (max-width: 767px) {
+  .wrapper {
+    max-width: 320px;
+    min-height: 540px;
+    margin: 0 auto;
+  }
+
+  .logo-order {
+    order: 2;
+    text-align: center;
+  }
+  .buttons-order {
+    order: 1;
+    text-align: center;
+  }
+
+  .menu {
+    padding-top: 26px;
+  }
+  h1 {
+    margin-bottom: 22px;
+  }
+
+  .menu-buttons {
+    margin-bottom: 90px;
+  }
+
+  .text-holder {
+    margin-left: -2px;
+    margin-right: -2px;
+  }
+
+  h2 {
+    margin-bottom: 10px;
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  .text-header {
+    width: 220px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .find-partner {
+    padding: 10px 45px;
+  }
+
+  .partners {
+    padding-bottom: 60px;
+  }
+
+  .partners-list-item {
+    margin-bottom: 30px;
+    padding: 0 31px;
+  }
+
+  .see-other {
+    width: 264px;
+    padding: 15px 50px;
+  }
 }
