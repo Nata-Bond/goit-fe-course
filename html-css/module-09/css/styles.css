@@ -246,3 +246,17 @@ h3 {
     padding: 15px 50px;
   }
 }
+
+@media (min-width: 768px) {
+  /* .wrapper {
+    max-width: 940px;
+    min-height: 695px;
+    margin: 0 auto;
+  } */
+
+  .menu-items {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+}
