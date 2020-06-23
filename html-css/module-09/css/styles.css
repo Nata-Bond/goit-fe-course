@@ -27,10 +27,6 @@ header {
   background-repeat: no-repeat;
 }
 
-.menu {
-  display: flex;
-}
-
 .site-logo {
   text-transform: uppercase;
   color: rgb(255, 255, 255);
@@ -247,16 +243,103 @@ h3 {
   }
 }
 
-@media (min-width: 768px) {
-  /* .wrapper {
-    max-width: 940px;
+@media (min-width: 768px) and (max-width: 1169px) {
+  .wrapper {
+    max-width: 941px;
     min-height: 695px;
     margin: 0 auto;
-  } */
+  }
 
+  .partners-list-item:nth-child(odd) {
+    margin-bottom: 60px;
+  }
+}
+
+@media (min-width: 768px) {
   .menu-items {
     display: flex;
     flex-wrap: nowrap;
-    justify-content: space-between;
+    padding-top: 30px;
+    padding-left: 40px;
+    margin-bottom: 120px;
+  }
+  .menu-buttons {
+    margin-bottom: 0px;
+    margin-top: 20px;
+  }
+
+  .text-holder {
+    width: 510px;
+    margin: 0 auto;
+  }
+  h2 {
+    font-size: 52px;
+    line-height: 62px;
+    margin-bottom: 26px;
+  }
+  .text-header {
+    margin-bottom: 30px;
+    font-size: 24px;
+    line-height: 27px;
+  }
+  .find-partner {
+    padding: 10px 20px;
+  }
+
+  .partners {
+    padding-bottom: 40px;
+  }
+
+  .partners-list {
+    display: flex;
+    margin-bottom: 40px;
+  }
+
+  .heather {
+    order: 2;
+  }
+
+  .lukas {
+    order: 3;
+  }
+
+  .bradley {
+    order: 4;
+  }
+
+  .see-other {
+    padding: 10px 30px;
+  }
+}
+
+@media (min-width: 1170px) {
+  .wrapper {
+    min-width: 1070px;
+    margin: 0 auto;
+  }
+
+  .menu-items {
+    margin-bottom: 220px;
+  }
+
+  h2 {
+    width: 504px;
+    margin-bottom: 30px;
+  }
+
+  .text-holder {
+    padding-bottom: 300px;
+  }
+
+  .partners-list {
+    width: 942px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+  .partners {
+    padding-bottom: 40px;
+  }
+  .partners {
+    padding-bottom: 70px;
   }
 }
