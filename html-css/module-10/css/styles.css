@@ -44,12 +44,24 @@ input[type="radio”"].visually-hidden {
   margin: 0 auto;
 }
 
+header {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(240, 134, 134, 0.8),
+      rgba(247, 220, 132, 0.8)
+    ),
+    url(../img/back-min.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 a {
   text-decoration: none;
 }
 
 a.logo {
-  color: #95e1d3;
+  color: #ffffff;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 30px;
@@ -62,16 +74,16 @@ a.logo {
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
-  color: #95e1d3;
+  color: #ffffff;
   text-transform: uppercase;
   display: flex;
-  flex-basis: 490px;
+  flex-basis: 520px;
   justify-content: space-between;
 }
 
 .menu-item:hover,
 .menu-item:focus {
-  color: #f38181;
+  color: #fce38a;
   cursor: pointer;
   transition: color 200ms linear;
 }
@@ -80,26 +92,86 @@ a.logo {
   position: relative;
 }
 
-.menu-item:hover::after {
+.menu-item:nth-child(-n + 5):hover::after {
   content: "";
   position: absolute;
   height: 3px;
   width: 100%;
   margin: 0 auto;
-  background-color: #f38181;
+  background-color: #fce38a;
   display: block;
   bottom: -10px;
+}
+
+.cart,
+.search {
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.menu-item svg {
+  width: 18px;
+  height: 15px;
+  fill: #ffffff;
+}
+
+.menu-item:hover svg {
+  fill: #fce38a;
 }
 
 .header-menu {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  margin-top: 30px;
-  margin-bottom: 100px;
+  margin-bottom: 150px;
 }
 
+.welcome {
+  width: 900px;
+  color: #ffffff;
+  margin: 0 auto;
+  padding-bottom: 230px;
+  justify-content: center;
+}
+
+.welcome-title {
+  font-family: "Kaushan Script", cursive;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 84px;
+  text-transform: capitalize;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.welcome-text {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 150px;
+  line-height: 140px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 120px;
+}
+
+.welcome-button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  border: 3px solid white;
+  color: white;
+  background-color: transparent;
+  padding: 10px 25px;
+  display: block;
+  margin: 0 auto;
+}
 /* MAIN */
+
+.services {
+  padding-top: 40px;
+}
 
 .question {
   font-family: "Kaushan Script", cursive;
@@ -136,23 +208,25 @@ h2::after {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
   height: 330px;
 }
 
 .service-list-item {
   display: flex;
   justify-content: center;
-  flex-basis: 391px;
-  flex-grow: 1;
+  flex-basis: 380px;
+  flex-grow: 0;
 }
 
 .service-list-item::before {
   content: "";
   display: block;
   min-width: 82px;
-  min-height: 100%;
+  height: 100%;
   background-repeat: no-repeat;
   background-position: top;
+  background-size: center;
 }
 
 .alarm::before {
@@ -239,55 +313,30 @@ h2::after {
   align-items: center;
 }
 
-.icon-fb {
-  background-image: url(../img/icon-fb.png);
+.button-icon {
   width: 58px;
   height: 58px;
-  background-repeat: no-repeat;
-  background-position: center;
   background-color: rgb(252, 227, 138);
   border: 1px solid transparent;
   margin-right: 1px;
   cursor: pointer;
+  display: flex;
+  display: flex;
+  justify-content: center;
 }
 
-.icon-tw {
-  background-image: url(../img/icon-tw.png);
-  width: 58px;
-  height: 58px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: rgb(252, 227, 138);
-  border: 1px solid transparent;
-  margin-right: 1px;
-  cursor: pointer;
+.button-icon svg {
+  width: 30px;
+  height: 30px;
+  fill: #f38181;
 }
 
-.icon-pin {
-  background-image: url(../img/icon-pin.png);
-  width: 58px;
-  height: 58px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: rgb(252, 227, 138);
-  border: 1px solid transparent;
-  margin-right: 1px;
-  cursor: pointer;
+.button-icon:hover svg {
+  fill: #ffffff;
 }
 
-.icon-insta {
-  background-image: url(../img/icon-insta.png);
-  width: 58px;
-  height: 58px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: rgb(252, 227, 138);
-  border: 1px solid transparent;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: rgb(149, 225, 211);
+.button-icon:hover {
+  background-color: #f38181;
   transition: background-color 200ms linear;
 }
 
@@ -367,4 +416,42 @@ button:hover {
   border: 2px solid transparent;
   padding: 16px 32px;
   cursor: pointer;
+}
+
+@media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  header {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(240, 134, 134, 0.8),
+        rgba(247, 220, 132, 0.8)
+      ),
+      url(../img/back@2x-min.jpg);
+  }
+
+  .service-list-item::before {
+    background-size: contain;
+    width: 32px;
+    height: 31px;
+  }
+
+  .alarm::before {
+    background-image: url(../img/alarm@2x.png);
+  }
+
+  .line-graph::before {
+    background-image: url(../img/line-graph@2x.png);
+  }
+  .computer::before {
+    background-image: url(../img/computer-ok@2x.png);
+  }
+
+  .book::before {
+    background-image: url(../img/book@2x.png);
+  }
+  .home::before {
+    background-image: url(../img/home@2x.png);
+  }
+  .digital::before {
+    background-image: url(../img/digital@2x.png);
+  }
 }
