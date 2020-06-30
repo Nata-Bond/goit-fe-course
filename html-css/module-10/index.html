@@ -12,93 +12,103 @@
     <title>Document</title>
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="wrapper">
-        <nav class="header-menu">
-          <h1><a class="logo" href="#">MoGo</a></h1>
-          <ul class="menu">
-            <li class="menu-item"><a href="#"></a>About</li>
-            <li class="menu-item"><a href="#"></a>Service</li>
-            <li class="menu-item"><a href="#"></a>Work</li>
-            <li class="menu-item"><a href="#"></a>Blog</li>
-            <li class="menu-item"><a href="#"></a>Contact</li>
-            <li class="menu-item menu-item-button">
-              <button class="cart">
-                <svg>
+        <nav class="menu">
+          <h1><a class="logo link" href="#">MoGo</a></h1>
+          <ul class="menu__list">
+            <li class="menu__list-item menu__list-item--active">
+              <a class="menu__link link" href="#"></a>About
+            </li>
+            <li class="menu__list-item menu__list-item--active">
+              <a class="menu__link link" href="#"></a>Service
+            </li>
+            <li class="menu__list-item menu__list-item--active">
+              <a class="menu__link link" href="#"></a>Work
+            </li>
+            <li class="menu__list-item menu__list-item--active">
+              <a class="menu__link link" href="#"></a>Blog
+            </li>
+            <li class="menu__list-item menu__list-item--active">
+              <a class="menu__link link" href="#"></a>Contact
+            </li>
+            <li class="menu__list-item">
+              <button class="menu__btn">
+                <svg class="menu__btn-svg menu__btn-svg--active">
                   <use href="img/social/sprite.svg#cart"></use>
                 </svg>
               </button>
             </li>
-            <li class="menu-item menu-item-button">
-              <button class="search">
-                <svg>
+            <li class="menu__list-item">
+              <button class="menu__btn">
+                <svg class="menu__btn-svg menu__btn-svg--active">
                   <use href="img/social/sprite.svg#search"></use>
                 </svg>
               </button>
             </li>
           </ul>
         </nav>
-        <div class="welcome">
-          <p class="welcome-title">Creative template</p>
-          <p class="welcome-text">Welcome to mogo</p>
-          <button class="welcome-button">Learn more</button>
+        <div class="header-content">
+          <p class="header-content__title">Creative template</p>
+          <p class="header-content__text">Welcome to mogo</p>
+          <button class="header-content__btn">Learn more</button>
         </div>
       </div>
     </header>
     <main class="wrapper">
       <section class="services">
-        <p class="question">We work with</p>
-        <h2>Amazing services</h2>
-        <ul class="services-list">
-          <li class="service-list-item alarm">
-            <div class="service-box">
-              <p class="service-title">photography</p>
-              <p class="service-text">
+        <p class="services__question question">We work with</p>
+        <h2 class="services__title title">Amazing services</h2>
+        <ul class="services__list">
+          <li class="services__item services__icon--alarm">
+            <div class="services__content">
+              <p class="services__content-title">photography</p>
+              <p class="services__content-text">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                 Deserunt, voluptate!
               </p>
             </div>
           </li>
-          <li class="service-list-item line-graph">
-            <div class="service-box">
-              <p class="service-title">photography</p>
-              <p class="service-text">
+          <li class="services__item services__icon--line-graph">
+            <div class="services__content">
+              <p class="services__content-title">photography</p>
+              <p class="services__content-text">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                 Deserunt, voluptate!
               </p>
             </div>
           </li>
-          <li class="service-list-item computer">
-            <div class="service-box">
-              <p class="service-title">photography</p>
-              <p class="service-text">
+          <li class="services__item services__icon--computer">
+            <div class="services__content">
+              <p class="services__content-title">photography</p>
+              <p class="services__content-text">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                 Deserunt, voluptate!
               </p>
             </div>
           </li>
-          <li class="service-list-item book">
-            <div class="service-box">
-              <p class="service-title">photography</p>
-              <p class="service-text">
+          <li class="services__item services__icon--book">
+            <div class="services__content">
+              <p class="services__content-title">photography</p>
+              <p class="services__content-text">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                 Deserunt, voluptate!
               </p>
             </div>
           </li>
-          <li class="service-list-item home">
-            <div class="service-box">
-              <p class="service-title">photography</p>
-              <p class="service-text">
+          <li class="services__item services__icon--home">
+            <div class="services__content">
+              <p class="services__content-title">photography</p>
+              <p class="services__content-text">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                 Deserunt, voluptate!
               </p>
             </div>
           </li>
-          <li class="service-list-item digital">
-            <div class="service-box">
-              <p class="service-title">photography</p>
-              <p class="service-text">
+          <li class="services__item services__icon--digital">
+            <div class="services__content">
+              <p class="services__content-title">photography</p>
+              <p class="services__content-text">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                 Deserunt, voluptate!
               </p>
@@ -107,43 +117,43 @@
         </ul>
       </section>
       <section class="team">
-        <p class="question">Who we are</p>
-        <h2>Meet our team</h2>
-        <p class="team-text">
+        <p class="team__question question">Who we are</p>
+        <h2 class="team__title title">Meet our team</h2>
+        <p class="team__text">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores
           excepturi accusantium distinctio et, accusamus inventore illum.
           Reiciendis, dolorum suscipit dolor quaerat illo eius quia itaque
           repellat dolore perspiciatis ipsa culpa eveniet odit excepturi quas?
           Rerum?
         </p>
-        <ul class="team-list">
-          <li class="team-list-item">
-            <div class="icons">
-              <ul class="icon-list">
+        <ul class="team__list">
+          <li class="team__item">
+            <div class="team__icons">
+              <ul class="team__icon-list">
                 <li>
-                  <button class="button-icon">
-                    <svg>
+                  <button class="team__icon-btn">
+                    <svg class="team__icon-svg">
                       <use href="img/social/sprite.svg#icon-fb"></use>
                     </svg>
                   </button>
                 </li>
                 <li>
-                  <button class="button-icon">
-                    <svg>
+                  <button class="team__icon-btn">
+                    <svg class="team__icon-svg">
                       <use href="img/social/sprite.svg#icon-tw"></use>
                     </svg>
                   </button>
                 </li>
                 <li>
-                  <button class="button-icon">
-                    <svg>
+                  <button class="team__icon-btn">
+                    <svg class="team__icon-svg">
                       <use href="img/social/sprite.svg#icon-pin"></use>
                     </svg>
                   </button>
                 </li>
                 <li>
-                  <button class="button-icon">
-                    <svg>
+                  <button class="team__icon-btn">
+                    <svg class="team__icon-svg">
                       <use href="img/social/sprite.svg#icon-insta"></use>
                     </svg>
                   </button>
@@ -151,42 +161,43 @@
               </ul>
             </div>
             <img
+              class="team__img"
               srcset="img/first-man.jpg 380x, img/first-man@2x.jpg 760w"
               src="img/first-man.jpg"
               alt="a man"
               width="380px"
               height="470px"
             />
-            <p class="name">Matthew Dix</p>
-            <p class="position">Graphic Design</p>
+            <p class="team__name">Matthew Dix</p>
+            <p class="team__position">Graphic Design</p>
           </li>
-          <li class="team-list-item">
-            <div class="icons">
-              <ul class="icon-list">
-                <li>
-                  <button class="button-icon">
-                    <svg>
+          <li class="team__item">
+            <div class="team__icons">
+              <ul class="team__icon-list">
+                <li class="team__icon-item">
+                  <button class="team__icon-btn">
+                    <svg class="team__icon-svg">
                       <use href="img/social/sprite.svg#icon-fb"></use>
                     </svg>
                   </button>
                 </li>
                 <li>
-                  <button class="button-icon">
-                    <svg>
+                  <button class="team__icon-btn">
+                    <svg class="team__icon-svg">
                       <use href="img/social/sprite.svg#icon-tw"></use>
                     </svg>
                   </button>
                 </li>
-                <li>
-                  <button class="button-icon">
-                    <svg>
+                <li class="team__icon-item">
+                  <button class="team__icon-btn">
+                    <svg class="team__icon-svg">
                       <use href="img/social/sprite.svg#icon-pin"></use>
                     </svg>
                   </button>
                 </li>
-                <li>
-                  <button class="button-icon">
-                    <svg>
+                <li class="team__icon-item">
+                  <button class="team__icon-btn">
+                    <svg class="team__icon-svg">
                       <use href="img/social/sprite.svg#icon-insta"></use>
                     </svg>
                   </button>
@@ -194,42 +205,43 @@
               </ul>
             </div>
             <img
+              class="team__img"
               srcset="img/second-man.jpg 380x, img/second-man@2x.jpg 760w"
               src="img/second-man.jpg"
               alt="another man"
               width="380px"
               height="470px"
             />
-            <p class="name">Cristopher Campbell</p>
-            <p class="position">Graphic Design</p>
+            <p class="team__name">Cristopher Campbell</p>
+            <p class="team__position">Graphic Design</p>
           </li>
-          <li class="team-list-item">
-            <div class="icons">
-              <ul class="icon-list">
+          <li class="team__item">
+            <div class="team__icons">
+              <ul class="team__icon-list">
                 <li>
-                  <button class="button-icon">
-                    <svg>
+                  <button class="team__icon-btn">
+                    <svg class="team__icon-svg">
                       <use href="img/social/sprite.svg#icon-fb"></use>
                     </svg>
                   </button>
                 </li>
                 <li>
-                  <button class="button-icon">
-                    <svg>
+                  <button class="team__icon-btn">
+                    <svg class="team__icon-svg">
                       <use href="img/social/sprite.svg#icon-tw"></use>
                     </svg>
                   </button>
                 </li>
                 <li>
-                  <button class="button-icon">
-                    <svg>
+                  <button class="team__icon-btn">
+                    <svg class="team__icon-svg">
                       <use href="img/social/sprite.svg#icon-pin"></use>
                     </svg>
                   </button>
                 </li>
                 <li>
-                  <button class="button-icon">
-                    <svg>
+                  <button class="team__icon-btn">
+                    <svg class="team__icon-svg">
                       <use href="img/social/sprite.svg#icon-insta"></use>
                     </svg>
                   </button>
@@ -237,32 +249,33 @@
               </ul>
             </div>
             <img
+              class="team__img"
               srcset="img/third-man.jpg 380x, img/third-man@2x.jpg 760w"
               src="img/third-man.jpg"
               alt="the third man"
               width="380px"
               height="470px"
             />
-            <p class="name">Michael Phertic</p>
-            <p class="position">Developer</p>
+            <p class="team__name">Michael Phertic</p>
+            <p class="team__position">Developer</p>
           </li>
         </ul>
       </section>
     </main>
-    <footer class="wrapper">
-      <div class="footer-sign">
+    <footer class="footer wrapper">
+      <div class="footer__sign">
         <p>
           <span>&#169;</span>2016 MoGo free PSD template by
-          <a href="#">Laaqiq</a>
+          <a class="footer__link link" href="#">Laaqiq</a>
         </p>
-        <div class="footer-space">
+        <div class="footer__space">
           <input
-            class="email"
+            class="footer__input-email"
             type="email"
             name="email"
             placeholder="Your Email..."
           />
-          <button class="suscribe" type="submit">Suscribe</button>
+          <button class="footer__btn" type="submit">Suscribe</button>
         </div>
       </div>
     </footer>
