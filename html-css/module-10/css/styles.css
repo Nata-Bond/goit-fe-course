@@ -55,7 +55,7 @@ input[type="radio”"].visually-hidden {
   margin: 0 auto;
 }
 
-.header {
+.header-cover-container {
   background-image: -webkit-gradient(
       linear,
       left top,
@@ -164,7 +164,7 @@ input[type="radio”"].visually-hidden {
   margin-bottom: 150px;
 }
 
-.header-content {
+.cover {
   width: 900px;
   color: #ffffff;
   margin: 0 auto;
@@ -174,7 +174,7 @@ input[type="radio”"].visually-hidden {
   justify-content: center;
 }
 
-.header-content__title {
+.cover__title {
   font-family: "Kaushan Script", cursive;
   font-weight: 400;
   font-size: 72px;
@@ -184,7 +184,7 @@ input[type="radio”"].visually-hidden {
   margin-bottom: 50px;
 }
 
-.header-content__text {
+.cover__text {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 150px;
@@ -194,7 +194,7 @@ input[type="radio”"].visually-hidden {
   margin-bottom: 120px;
 }
 
-.header-content__btn {
+.cover__btn {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 14px;
@@ -516,7 +516,7 @@ input[type="radio”"].visually-hidden {
   (-o-min-device-pixel-ratio: 2/1),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
-  .header {
+  .header-cover-container {
     background-image: -webkit-gradient(
         linear,
         left top,
