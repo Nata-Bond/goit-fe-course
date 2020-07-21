@@ -1,0 +1,54 @@
+@media (-webkit-min-device-pixel-ratio: 2),
+  (-o-min-device-pixel-ratio: 2/1),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .header-cover-container {
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from(rgba(240, 134, 134, 0.8)),
+        to(rgba(247, 220, 132, 0.8))
+      ),
+      url(../images/back@2x-min.jpg);
+    background-image: -o-linear-gradient(
+        top,
+        rgba(240, 134, 134, 0.8),
+        rgba(247, 220, 132, 0.8)
+      ),
+      url(../images/back@2x-min.jpg);
+    background-image: linear-gradient(
+        to bottom,
+        rgba(240, 134, 134, 0.8),
+        rgba(247, 220, 132, 0.8)
+      ),
+      url(../images/back@2x-min.jpg);
+  }
+
+  .services__item::before {
+    background-size: contain;
+    width: 32px;
+    height: 31px;
+  }
+
+  .services__icon--alarm::before {
+    background-image: url(../images/icons/services/alarm@2x.png);
+  }
+
+  .services__icon--line-graph::before {
+    background-image: url(../images/icons/services/line-graph@2x.png);
+  }
+  .services__icon--computer::before {
+    background-image: url(../images/icons/services/computer-ok@2x.png);
+  }
+
+  .services__icon--book::before {
+    background-image: url(../images/icons/services/book@2x.png);
+  }
+  .services__icon--home::before {
+    background-image: url(../images/icons/services/home@2x.png);
+  }
+  .services__icon--digital::before {
+    background-image: url(../images/icons/services/digital@2x.png);
+  }
+}

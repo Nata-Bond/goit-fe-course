@@ -1,0 +1,25 @@
+.header-cover-container {
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(240, 134, 134, 0.8)),
+      to(rgba(247, 220, 132, 0.8))
+    ),
+    url(../images/back-min.jpg);
+  background-image: -o-linear-gradient(
+      top,
+      rgba(240, 134, 134, 0.8),
+      rgba(247, 220, 132, 0.8)
+    ),
+    url(../images/back-min.jpg);
+  background-image: linear-gradient(
+      to bottom,
+      rgba(240, 134, 134, 0.8),
+      rgba(247, 220, 132, 0.8)
+    ),
+    url(../images/back-min.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
