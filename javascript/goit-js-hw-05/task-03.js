@@ -3,15 +3,16 @@ class Storage {
     this.items = array;
   }
   getItems() {
-    console.log(this.items);
+    return this.items;
   }
 
   addItem(item) {
-    return this.items.push(item);
+    this.items.push(item);
   }
   removeItem(item) {
-    if (this.items.indexOf(item) !== -1) {
-      this.items.splice(this.items.indexOf(item), 1);
+    const itemIndex = this.items.indexOf(item);
+    if (itemIndex !== -1) {
+      this.items.splice(itemIndex, 1);
     }
   }
 }
