@@ -48,25 +48,22 @@ galleryRef.addEventListener("click", (event) => {
   lightboxRef.classList.add("is-open");
   lightboxImageRef.src = fullImg;
   lightboxImageRef.alt = imageAlt;
-  addEscapeFunc();
+  document.addEventListener("keydown", handleEscape);
 });
 
 const closeLightBox = function () {
   lightboxRef.classList.remove("is-open");
   lightboxImageRef.src = "";
   lightboxImageRef.alt = "";
+  document.removeEventListener("keydown", handleEscape);
 };
 
 lightboxButtonRef.addEventListener("click", () => {
   closeLightBox();
 });
 
-const addEscapeFunc = function () {
-  galleryRef.addEventListener("keydown", (event) => {
-    if (event.code === "Escape") {
-      console.log(event);
-
-      closeLightBox();
-    }
-  });
+const handleEscape = function () {
+  if (event.code === "Escape") {
+    closeLightBox();
+  }
 };
